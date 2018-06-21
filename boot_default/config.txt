@@ -76,6 +76,11 @@ display_rotate=0
 # Decrease audio noise.
 disable_audio_dither=1
 
+# Disable the new audio pwm driver to avoid the risk of a kernel / firmware crash.
+# https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=195178
+# https://github.com/raspberrypi/linux/issues/2587
+audio_pwm_mode=1
+
 # ---------------------------------------------------------------------------------------
 # Configuration Filters - RPis
 
